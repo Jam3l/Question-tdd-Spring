@@ -3,7 +3,10 @@ package exercice.question.entities;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * Une question contient:
@@ -17,6 +20,9 @@ import lombok.Data;
  * 
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Question {
 
 	private long id;

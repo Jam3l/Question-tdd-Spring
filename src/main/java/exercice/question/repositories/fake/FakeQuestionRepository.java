@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Repository;
+
 import exercice.question.entities.Question;
 
 import exercice.question.repositories.QuestionRepository;
 
+@Repository
 public class FakeQuestionRepository implements QuestionRepository {
 
 	private List<Question> questions = new ArrayList<>();
